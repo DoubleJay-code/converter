@@ -1,0 +1,90 @@
+body {
+  font-family: 'Century Gothic';
+}
+.App {
+  margin: 2% 3% 0 3%;
+}
+
+// header
+header {
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+
+//wrapper
+.wrapper {
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+// block
+.block {
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+  h2 {
+    font-size: 36px;
+    color: #c05406;
+    margin-bottom: 30px;
+  }
+}
+
+.block__currency {
+  margin-bottom: 20px;
+  ul {
+    display: inline-flex;
+    li {
+      font-size: 36px;
+      line-height: 65px;
+      color: #000000;
+      border: 1px solid #cdcdcd;
+      width: 140px;
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+      &:active {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+      &.active {
+        background-color: #c05406;
+        color: #fff;
+      }
+      path {
+        stroke-width: 4;
+        stroke-linecap: square;
+      }
+    }
+  }
+}
+
+.block__input {
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  input {
+    background: #f1f1f1;
+    font-weight: 700;
+    font-size: 100px;
+    margin: 20px 0;
+  }
+}
+
+//reverse
+.reverse {
+  svg {
+    position: relative;
+    top: 230px;
+    path {
+      stroke-width: 4;
+      stroke-linecap: square;
+    }
+  }
+}
