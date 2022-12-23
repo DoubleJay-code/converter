@@ -46,19 +46,6 @@ function App() {
       });
   }, []);
 
-  const array = [
-    'https://jsonplaceholder.typicode.com/users/1',
-    'https://jsonplaceholder.typicode.com/posts/1',
-  ];
-
-  const fetchFunc = async (array) => {
-    return Promise.all([
-      array.map((el) => fetch(el).then((res) => res.json())),
-    ]);
-  };
-
-  console.log(fetchFunc(array));
-
   return (
     <div className="App">
       <Header />
