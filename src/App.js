@@ -41,7 +41,6 @@ function App() {
       .then((json) => (ratesRef.current = json))
       .catch((err) => {
         console.log(err);
-
         alert('Wrooong API');
       });
   }, []);
