@@ -35,7 +35,7 @@ function App() {
 
   useEffect(() => {
     fetch(
-      'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,QMALL,TON&tsyms=USD,RUB,EUR,KZT,EUR'
+      'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,QMALL,TON&tsyms=USD,RUB,EUR,KZT'
     )
       .then((res) => res.json())
       .then((json) => (ratesRef.current = json))
